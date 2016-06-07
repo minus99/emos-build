@@ -1,0 +1,4 @@
+@charset "UTF-8";
+
+/*emos fix*/
+.pageLogin_btnFacebookLoginKutu > table, .pageLogin_btnFacebookLogin > table {display: table !important;}
