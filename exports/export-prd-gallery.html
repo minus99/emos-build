@@ -1,0 +1,25 @@
+<div class="swiper-container swiper-container-horizontal">
+  <div class="swiper-inner">
+    <ul>
+      <EMOSLOOP source="S_EXP_URUNRESIM" param="@FTP_KOD=$$session.FTP_KOD$$|@LNG_CULTURENAME=$$request.lang$$|@URN_KODLAR=$$request.URN$$"
+        filter="URS_IMGFLS_FL=0">
+        <li data-thumb="$$URS_RESIM_URL$$">
+          <a rel="zoomWidth:596, zoomHeight:700, adjustX:1, adjustY:-20, position:'body', attachmentDiv:'.swiper-container'"
+            class='cloud-zoom' href="$$URS_RESIM_LARGE$$" target="_blank">
+            <img src="$$URS_RESIM_MEDIUM$$" alt="$$URS_URNAD$$" />
+          </a>
+        </li>
+      </EMOSLOOP>
+    </ul>
+  </div>
+  <EMOSLOOP source="S_EXP_URUNRESIM" param="@FTP_KOD=$$session.FTP_KOD$$|@LNG_CULTURENAME=$$request.lang$$|@URN_KODLAR=$$request.URN$$"
+    filter="URS_IMGFLS_FL=1">
+    <div class="ems-prd-video-wrapper">
+      <div class="ems-prd-video-inner">
+        <a class="btn btn-close" href="javascript:void(0);"><i class="ems-icon close1">Close</i></a>
+        <div class="ems-prd-video"></div>
+      </div>
+      <a href="javascript:void(0)" rel="$$URS_RESIM$$" class="btn btn-play"><span></span><i class="ems-icon play">Play</i></a>
+    </div>
+  </EMOSLOOP>
+</div>

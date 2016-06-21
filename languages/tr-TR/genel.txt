@@ -7,3 +7,4 @@ lbfKUCUKSEPETHTML|<div class="ems-col"> <div class="cart-prd-remove"><a href='' 
 lbfSPT_SEPETDEURUNYOK|<p>Sepetiniz Henüz Boş</p>
 lbfARM_MESAJ|Arama
 lbfkutuArama1|<a href="javascript:void(0);" class="btn btn-clear"><i class="ems-icon clear"></i></a>
+lbfImgZoomScript|getExportData[export-prd-gallery;]

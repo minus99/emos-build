@@ -1,0 +1,8 @@
+<EMOSLOOP source="S_EXP_URUNKATEGORI" param="@FTP_KOD=$$session.FTP_KOD$$|@LNG_CULTURENAME=$$request.lang$$" filter="KATID=$$request.kat$$">
+  <EMOSIF source="S_EXP_URUNKATEGORI" condition="KATACIKLAMA IS NOT NULL AND KATACIKLAMA<>''">
+    <div class="ems-prd-list-cat-info"><EMOSIF source="S_EXP_URUNKATEGORI" condition="KATRESIM IS NOT NULL AND KATRESIM<>''"><b style="background-image: url($$KATRESIM$$);"></b></EMOSIF>
+      <h2>$$KATAD$$</h2>
+      <p>$$KATACIKLAMA$$</p>
+    </div>
+  </EMOSIF>
+</EMOSLOOP>
