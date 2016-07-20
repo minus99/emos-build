@@ -1,3 +1,4 @@
+FLD_FIELD|FLD_TEXT
 lbfkutuUyeGiris1|<script>$('body').addClass('ems-logoff');</script>Yeni Üyelik (logoff 'ken gelir)
 lbfkutuUyeGiris3|(logoff 'ken gelir)
 lbfkutuUyeGiris2|<script>$('body').addClass('ems-login');</script> (login 'ken gelir)
