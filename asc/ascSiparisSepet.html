@@ -9,7 +9,55 @@
     <emos id='plhUyeKartBilgi' />
     <emos id='plhCiroUstLimit' />
     <div class="ems-col ems-col-left">
-        <emos id='plhSepetListe' />
+        <emos type="div" class="page-top-title" id="plhSepetHeader" />
+        <emos id='plhSepetListe'>
+            <ascSepetListe>
+                <header>{div class="ems-grid-default ems-grid-cart"}
+                    <div class="ems-grid-header clearfix">
+                        <div class="ems-grid-delete"></div>
+                        <div class="ems-grid-img"></div>
+                        <div class="ems-grid-name">
+                            <emos id="plhUrunAdiLabel" />
+                        </div>
+                        <div class="ems-grid-price">
+                            <emos id="plhBirimFiyatLabel" />
+                        </div>
+                        <div class="ems-grid-piece">
+                            <emos id="plhUrunAdetLabel" />
+                        </div>
+                        <div class="ems-grid-price-total">
+                            <emos id="plhToplamFiyatLabel" />
+                        </div>
+                    </div>
+                </header>
+
+                <body>
+                    <div class="ems-grid-row clearfix">
+                        <div class="ems-grid-delete">
+                            <emos id="plhSatirSil" />
+                        </div>
+                        <div class="ems-grid-img">
+                            <emos id="plhUrunResim" />
+                        </div>
+                        <div class="ems-grid-name">
+                            <emos id="plhUrunAdi" />
+                        </div>
+                        <div class="ems-grid-price">
+                            <emos id="plhBirimFiyat" />
+                        </div>
+                        <div class="ems-grid-piece">
+                            <emos id="plhUrunAdetCikar" />
+                            <emos id="plhUrunAdet" />
+                            <emos id="plhUrunAdetEkle" />
+                        </div>
+                        <div class="ems-grid-price-total">
+                            <emos id="plhToplamFiyat" />
+                        </div>
+                    </div>
+                </body>
+                <footer>{/div}</footer>
+            </ascSepetListe>
+        </emos>
         <div class="ems-cart-button">
             <div class="ems-cart-btn prev">
                 <emos id='plhBtnSepetGuncelle' />
@@ -20,63 +68,16 @@
         </div>
     </div>
     <div class="ems-col ems-col-right">
-        <div class="ems-cart-summary">
-            <emos id="plhSipDesiLabel" />
-            <emos id='plhDipToplamlar' />
-            <div class="ems-cart-coupon">
+                    <div class="ems-cart-coupon">
                 <emos id='plhKuponLabel' />
                 <emos id='plhKuponText' />
                 <emos id='plhBtnKuponKullan' />
                 <emos id='plhHCK_HATA' />
             </div>
-            <emos id='plhBtnSipTamamla' />
+        <div class="ems-cart-summary">
+            <emos id='plhDipToplamlar' />
         </div>
     </div>
     <div class="ems-fixer"></div>
+    <emos id='plhBtnSipTamamla' />
 </ascSiparisSepet>
-<ascSepetListe>
-    <header>{div class="ems-grid-default ems-grid-cart"}
-        <div class="ems-grid-header clearfix">
-            <div class="ems-grid-delete"></div>
-            <div class="ems-grid-img"></div>
-            <div class="ems-grid-name">
-                <emos id="plhUrunAdiLabel" />
-            </div>
-            <div class="ems-grid-price">
-                <emos id="plhBirimFiyatLabel" />
-            </div>
-            <div class="ems-grid-piece">
-                <emos id="plhUrunAdetLabel" />
-            </div>
-            <div class="ems-grid-price-total">
-                <emos id="plhToplamFiyatLabel" />
-            </div>
-        </div>
-    </header>
-
-    <body>
-        <div class="ems-grid-row clearfix">
-            <div class="ems-grid-delete">
-                <emos id="plhSatirSil" />
-            </div>
-            <div class="ems-grid-img">
-                <emos id="plhUrunResim" />
-            </div>
-            <div class="ems-grid-name">
-                <emos id="plhUrunAdi" />
-            </div>
-            <div class="ems-grid-price">
-                <emos id="plhBirimFiyat" />
-            </div>
-            <div class="ems-grid-piece">
-                <emos id="plhUrunAdetCikar" />
-                <emos id="plhUrunAdet" />
-                <emos id="plhUrunAdetEkle" />
-            </div>
-            <div class="ems-grid-price-total">
-                <emos id="plhToplamFiyat" />
-            </div>
-        </div>
-    </body>
-    <footer>{/div}</footer>
-</ascSepetListe>
