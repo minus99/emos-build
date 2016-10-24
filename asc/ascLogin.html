@@ -4,7 +4,7 @@
 			<emos id="plhLoginHata" />
 			<emos id="plhUyelikHata" />
 		</div>
-		<div class="ems-col ems-col-right">
+		<div class="ems-col">
 			<div class="ems-login" id="validateUyeGiris">
 				<div class="ems-login-inner">
 					<div class="ems-login-header">
@@ -21,6 +21,14 @@
 									<emos type="div" class="ems-form-label" id="plhLoginSifreLabel" />
 									<emos type="div" class="ems-form-obj" id="plhLoginSifre" />
 								</div>
+								<div class="ems-field text">
+									<div class="ems-form-label"></div>
+									<emos type="div" class="ems-form-obj" id="plhBeniHatirla" />
+								</div>
+								<div class="ems-field text">
+									<div class="ems-form-label"></div>
+									<emos type="div" class="ems-form-obj" id="plhUyelikCaptchaGiris" />
+								</div>
 								<div class="ems-field submit">
 									<emos id="plhLoginBtnGiris" />
 								</div>
@@ -28,8 +36,9 @@
 									<div class="ems-form-label"></div>
 									<emos type="div" class="ems-form-obj" id="plhLoginSifreUnut" />
 								</div>
-								<div class="ems-field submit">
-									<emos id="plhLoginBtnFacebook" />
+								<div class="fb-login-wrapper-append"></div>
+								<div class="ems-field text">
+									<emos type="div" class="ems-form-obj" id="plhUyelikExtTxt3Label" />
 								</div>
 							</div>
 						</div>
@@ -37,13 +46,10 @@
 					<div class="ems-login-footer"></div>
 				</div>
 			</div>
-		</div>
-		<div class="ems-col ems-col-left">
 			<div class="ems-signup" id="validateYeniUyelik">
 				<div class="ems-signup-inner">
 					<div class="ems-signup-header">
 						<emos id="plhUyelikHeader" />
-						<emos id="plhUyelikAciklama" />
 					</div>
 					<div class="ems-signup-body">
 						<div class="ems-form">
@@ -78,7 +84,7 @@
 								</div>
 								<div class="ems-field text">
 									<div class="ems-form-label"></div>
-									<emos type="div" class="ems-form-obj" id="plhUyelikCaptcha" />
+									<emos type="div" class="ems-form-obj" id="plhUyelikSozlesmeChk" />
 								</div>
 								<div class="ems-field text">
 									<div class="ems-form-label"></div>
@@ -88,13 +94,24 @@
 									<div class="ems-form-label"></div>
 									<emos type="div" class="ems-form-obj" id="plhUyelikSmsChk" />
 								</div>
-								<div class="ems-field text">
+								<div class="ems-field submit">
 									<div class="ems-form-label"></div>
-									<emos type="div" class="ems-form-obj" id="plhUyelikSozlesmeChk" />
+									<emos type="div" class="ems-form-obj" id="plhUyelikCaptcha" />
 								</div>
 								<div class="ems-field submit">
 									<div class="ems-form-label"></div>
 									<emos type="div" class="ems-form-obj" id="plhUyelikBtnKaydet" />
+								</div>
+								<div class="fb-login-wrapper">
+									<div class="ems-field text">
+										<emos type="div" class="ems-form-obj" id="plhUyelikExtTxt1Label" />
+									</div>
+									<div class="ems-field submit">
+										<emos id="plhLoginBtnFacebook" />
+									</div>
+								</div>
+								<div class="ems-field text">
+									<emos type="div" class="ems-form-obj" id="plhUyelikExtTxt2Label" />
 								</div>
 							</div>
 						</div>
@@ -103,6 +120,5 @@
 				</div>
 			</div>
 		</div>
-		<div class="ems-fixer"></div>
 	</div>
 </ascLogin>
