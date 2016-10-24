@@ -1,9 +1,9 @@
 <ascUyeBilgi>
-	<div class="ems-page-default ems-page-info">
+	<div class="ems-page-default ems-page-member-info">
 		<emos type="div" class="page-top-title" id="plhUyeBilgiHeader" />
-		<emos type="div" class="page-top-desc" id="plhUyelikAciklama" />
+		<emos type="div" class="page-top-desc page-top-desc-border" id="plhUyelikAciklama" />
 		<emos id="plhUyelikHata" />
-		<div class="ems-form">
+		<div class="ems-form ems-form-horizontal">
 			<div class="ems-form-inner">
 				<div class="ems-field text">
 					<emos type="div" class="ems-form-label" id="plhUyelikAdLabel" />
@@ -41,7 +41,7 @@
 					<emos type="div" class="ems-form-label" id="plhUyelikDilLabel" />
 					<emos type="div" class="ems-form-obj" id="plhUyelikDil" />
 				</div>
-				<div class="ems-field form-param">
+				<div class="ems-field form-param ems-none">
 					<div class="ems-form-label"></div>
 					<emos type="div" class="ems-form-obj" id="plhUyelikFormParam" />
 				</div>
@@ -66,7 +66,7 @@
 	</div>
 </ascUyeBilgi>
 <ascAdresBilgi>
-	<div class="ems-page-default ems-page-address">
+	<div class="ems-page-default ems-page-member-address">
 		<emos type="div" class="page-top-title" id="plhAdresBilgiHeader" />
 		<emos type="div" class="page-top-desc" id="plhAciklama" />
 		<div class="ems-address-form">
@@ -86,13 +86,15 @@
 			<emos type="div" class="ems-message ems-message-error" id="plhSiparisYokLabel" />
 			<emos id="plhSiparisListe">
 				<ascSiparisListe>
-					<header>{div class="ems-grid-default ems-grid-order"}
+					<header>{div class="ems-grid-default ems-grid-order"}</header>
+
+					<body>
 						<div class="ems-grid-header">
-							<div class="ems-grid-dealer">
-								<emos id="plhBayiAdiLabel" />
-							</div>
 							<div class="ems-grid-order-no">
 								<emos id="plhSipNoLabel" />
+							</div>
+							<div class="ems-grid-dealer">
+								<emos id="plhBayiAdiLabel" />
 							</div>
 							<div class="ems-grid-date">
 								<emos id="plhTarihLabel" />
@@ -125,14 +127,12 @@
 								<emos id="plhBtnSipDetayLabel" />
 							</div>
 						</div>
-					</header>
-					<body>
 						<div class="ems-grid-row">
-							<div class="ems-grid-dealer">
-								<emos id="plhBayiAdi" />
-							</div>
 							<div class="ems-grid-order-no">
 								<emos id="plhSipNo" />
+							</div>
+							<div class="ems-grid-dealer">
+								<emos id="plhBayiAdi" />
 							</div>
 							<div class="ems-grid-date">
 								<emos id="plhTarih" />
@@ -174,16 +174,45 @@
 	</div>
 </ascSiparis>
 <ascSiparisDetay>
-	<div class="ems-page-default ems-page-order-detail">
+	<div class="ems-page-default ems-page-member-order-detail">
 		<emos type="div" class="page-top-title" id="plhSipDetayHeader" />
+		<emos type="div" class="page-top-desc" id="plhSipTekrarla" />
 		<div class="order-detail-info">
+			<div class="no">
+				<emos type="div" class="text" id="plhSipNoLabel" />
+				<emos type="div" class="value" id="plhSipNo" />
+			</div>
 			<div class="date">
 				<emos type="div" class="text" id="plhTarihLabel" />
 				<emos type="div" class="value" id="plhTarih" />
 			</div>
-			<div class="no">
-				<emos type="div" class="text" id="plhSipNoLabel" />
-				<emos type="div" class="value" id="plhSipNo" />
+			<div class="payment-type">
+				<emos type="div" class="text" id="plhOdemeTuruLabel" />
+				<emos type="div" class="value" id="plhOdemeTuru" />
+			</div>
+			<div class="status">
+				<emos type="div" class="text" id="plhDurumLabel" />
+				<emos type="div" class="value" id="plhDurum" />
+			</div>
+			<div class="bank">
+				<emos type="div" class="text" id="plhBankaLabel" />
+				<emos type="div" class="value" id="plhBanka" />
+			</div>
+			<div class="currency">
+				<emos type="div" class="text" id="plhParaBrLabel" />
+				<emos type="div" class="value" id="plhParaBr" />
+			</div>
+			<div class="due-date">
+				<emos type="div" class="text" id="plhTeslimTarLabel" />
+				<emos type="div" class="value" id="plhTeslimTar" />
+			</div>
+			<div class="person">
+				<emos type="div" class="text" id="plhTeslimKisiLabel" />
+				<emos type="div" class="value" id="plhTeslimKisi" />
+			</div>
+			<div class="docs">
+				<emos type="div" class="text" id="plhFaturalarLabel" />
+				<emos type="div" class="value" id="plhFaturalar" />
 			</div>
 			<div class="cargo">
 				<emos type="div" class="text" id="plhKargoFirmasiLabel" />
@@ -193,64 +222,98 @@
 				<emos type="div" class="text" id="plhKargoTakipLabel" />
 				<emos type="div" class="value" id="plhKargoTakip" />
 			</div>
-			<div class="payment-type">
-				<emos type="div" class="text" id="plhOdemeTuruLabel" />
-				<emos type="div" class="value" id="plhOdemeTuru" />
+			<div class="gift-box">
+				<emos type="div" class="text" id="plhHediyePktLabel" />
+				<emos type="div" class="value" id="plhHediyePkt" />
 			</div>
-			<div class="bank">
-				<emos type="div" class="text" id="plhBankaLabel" />
-				<emos type="div" class="value" id="plhBanka" />
+			<div class="gift-note">
+				<emos type="div" class="text" id="plhHediyeNotLabel" />
+				<emos type="div" class="value" id="plhHediyeNot" />
 			</div>
-			<div class="status">
-				<emos type="div" class="text" id="plhDurumLabel" />
-				<emos type="div" class="value" id="plhDurum" />
+			<div class="note">
+				<emos type="div" class="text" id="plhBilgiNotuLabel" />
+				<emos type="div" class="value" id="plhBilgiNotu" />
 			</div>
-			<div class="due-date">
-				<emos type="div" class="text" id="plhTeslimTarLabel" />
-				<emos type="div" class="value" id="plhTeslimTar" />
-			</div>
-			<div class="docs">
-				<emos type="div" class="text" id="plhFaturalarLabel" />
-				<emos type="div" class="value" id="plhFaturalar" />
+			<div class="bank-point">
+				<emos type="div" class="text" id="plhKazBonusLabel" />
+				<emos type="div" class="value" id="plhKazBonus" />
 			</div>
 		</div>
+		<div class="order-address order-address-delivery">
+			<emos type="div" class="text" id="plhSevkAdresLabel" />
+			<emos type="div" class="value" id="plhSevkAdres" />
+		</div>
+		<div class="order-address order-address-billing">
+			<emos type="div" class="text" id="plhFatAdresLabel" />
+			<emos type="div" class="value" id="plhFatAdres" />
+		</div>
+		<emos type="div" class="inner-title" id="plhSipDetayBaslik" />
 		<emos id="plhSiparisDetayListe">
 			<ascSiparisDetayListe>
-				<header>{div class="ems-grid-default ems-grid-order-products"}
+				<header>{div class="ems-grid-default ems-grid-order-products"}</header>
+
+				<body>
 					<div class="ems-grid-header">
 						<div class="ems-grid-img">
 							<emos id="plhUrnResimLabel" />
 						</div>
+						<div class="ems-grid-code">
+							<emos id="plhUrnKodLabel" />
+						</div>
 						<div class="ems-grid-name">
 							<emos id="plhUrnAdLabel" />
 						</div>
-						<div class="ems-grid-piece">
+						<div class="ems-grid-status">
+							<emos id="plhUrnDurumLabel" />
+						</div>
+						<div class="ems-grid-pieces">
+							<emos id="plhUrnAdetLabel" />
+						</div>
+						<div class="ems-grid-piece0">
+							<emos id="plhIptAdetLabel" />
+						</div>
+						<div class="ems-grid-piece1">
 							<emos id="plhSevkAdetLabel" />
 						</div>
-						<div class="ems-grid-cancel-piece">
+						<div class="ems-grid-piece">
 							<emos id="plhIptalTalepMikLabel" />
 						</div>
-						<div class="ems-grid-total">
+						<div class="ems-grid-price">
+							<emos id="plhBrFiyatLabel" />
+						</div>
+						<div class="ems-grid-price-total">
 							<emos id="plhTopFiyatLabel" />
 						</div>
 					</div>
-				</header>
-
-				<body>
 					<div class="ems-grid-row">
 						<div class="ems-grid-img">
 							<emos id="plhUrnResim" />
 						</div>
+						<div class="ems-grid-code">
+							<emos id="plhUrnKod" />
+						</div>
 						<div class="ems-grid-name">
 							<emos id="plhUrnAd" />
 						</div>
-						<div class="ems-grid-piece">
+						<div class="ems-grid-status">
+							<emos id="plhUrnDurum" />
+						</div>
+						<div class="ems-grid-pieces">
 							<emos id="plhUrnAdet" />
 						</div>
-						<div class="ems-grid-cancel-piece">
+						<div class="ems-grid-piece0">
+							<emos id="plhIptAdet" />
+						</div>
+						<div class="ems-grid-piece1">
+							<emos id="plhSevkAdet" />
+						</div>
+						<div class="ems-grid-piece">
 							<emos id="plhIptalTalepMik" />
 						</div>
-						<div class="ems-grid-total">
+						<div class="ems-grid-price">
+							<emos id="plhBrFiyat" />
+						</div>
+						<div class="ems-grid-price-total">
 							<emos id="plhTopFiyat" />
 						</div>
 					</div>
@@ -258,8 +321,11 @@
 				<footer>{/div}</footer>
 			</ascSiparisDetayListe>
 		</emos>
-
-		<div class="order-detail-info order-detail-info-payment">
+		<div class="order-detail-info-payment">
+			<div class="total-no-tax">
+				<emos type="div" class="text" id="plhAraTopLabel" />
+				<emos type="div" class="value" id="plhAraTop" />
+			</div>
 			<div class="discount">
 				<emos type="div" class="text" id="plhNakitIndLabel" />
 				<emos type="div" class="value" id="plhNakitInd" />
@@ -268,24 +334,26 @@
 				<emos type="div" class="text" id="plhVergiLabel" />
 				<emos type="div" class="value" id="plhVergi" />
 			</div>
+			<div class="total-no-cargo">
+				<emos type="div" class="text" id="plhKargoHaricToplamLabel" />
+				<emos type="div" class="value" id="plhKargoHaricToplam" />
+			</div>
 			<div class="cargo-price">
 				<emos type="div" class="text" id="plhKargoTutarLabel" />
 				<emos type="div" class="value" id="plhKargoTutar" />
+			</div>
+			<div class="bank-point">
+				<emos type="div" class="text" id="plhBankaPuanLabel" />
+				<emos type="div" class="value" id="plhBankaPuan" />
+			</div>
+			<div class="member-point">
+				<emos type="div" class="text" id="plhKulPuanLabel" />
+				<emos type="div" class="value" id="plhKulPuan" />
 			</div>
 			<div class="total">
 				<emos type="div" class="text" id="plhSipToplamLabel" />
 				<emos type="div" class="value" id="plhSipToplam" />
 			</div>
-		</div>
-
-		<div class="order-address order-address-delivery">
-			<emos type="div" class="text" id="plhSevkAdresLabel" />
-			<emos type="div" class="value" id="plhSevkAdres" />
-		</div>
-
-		<div class="order-address order-address-billing">
-			<emos type="div" class="text" id="plhFatAdresLabel" />
-			<emos type="div" class="value" id="plhFatAdres" />
 		</div>
 
 		<div class="order-cancel">
@@ -301,49 +369,54 @@
 	</div>
 </ascSiparisDetay>
 <ascMesaj>
-	<div class="ems-page-default ems-page-message">
+	<div class="ems-page-default ems-page-member-message">
 		<emos type="div" class="page-top-title" id="plhMesajHeader" />
 		<emos type="div" class="page-top-desc" id="plhMesajBaslik" />
-		<emos id="plhMesajYokLabel" />
+		<emos type="div" class="ems-message ems-message-error" id="plhMesajYokLabel" />
 		<div class="ems-message-form">
 			<emos id="plhMesajListe">
 				<ascMesajListe>
-					<header>{div class="ems-grid-default ems-grid-message"}
+					<header>{div class="ems-grid-default ems-grid-message"}</header>
+
+					<body>
 						<div class="ems-grid-header">
-							<div class="ems-grid-icon">
-								<emos id="plhOkunduLabel" />
-							</div>
 							<div class="ems-grid-subject">
 								<emos id="plhKonuLabel" />
-							</div>
-							<div class="ems-grid-title">
-								<emos id="plhBaslikLabel" />
 							</div>
 							<div class="ems-grid-status">
 								<emos id="plhDurumLabel" />
 							</div>
+							<div class="ems-grid-title">
+								<emos id="plhBaslikLabel" />
+							</div>
+							<div class="ems-grid-order-id">
+								<emos id="plhSiparisNoLabel" />
+							</div>
 							<div class="ems-grid-date">
 								<emos id="plhTarihLabel" />
 							</div>
-						</div>
-					</header>
-
-					<body>
-						<div class="ems-grid-row">
 							<div class="ems-grid-icon">
-								<emos id="plhOkundu" />
+								<emos id="plhOkunduLabel" />
 							</div>
+						</div>
+						<div class="ems-grid-row">
 							<div class="ems-grid-subject">
 								<emos id="plhKonu" />
-							</div>
-							<div class="ems-grid-title">
-								<emos id="plhBaslik" />
 							</div>
 							<div class="ems-grid-status">
 								<emos id="plhDurum" />
 							</div>
+							<div class="ems-grid-title">
+								<emos id="plhBaslik" />
+							</div>
+							<div class="ems-grid-order-id">
+								<emos id="plhSiparisNo" />
+							</div>
 							<div class="ems-grid-date">
 								<emos id="plhTarih" />
+							</div>
+							<div class="ems-grid-icon">
+								<emos id="plhOkundu" />
 							</div>
 						</div>
 					</body>
@@ -353,47 +426,66 @@
 		</div>
 	</div>
 </ascMesaj>
-<ascMesajDetay>
-	<div class="ems-message-detail">
-		<div class="ems-page-default ems-page-message">
-			<emos type="div" class="page-top-title" id="plhMesajHeader" />
-			<div class="page-top-desc">
-				<ul class="ems-message-type">
-					<li>
-						<emos id="plhMsjTuruLabel" />
-						<emos id="plhMsjTuru" />
-					</li>
-					<li>
-						<emos id="plhMsjBaslikLabel" />
-						<emos id="plhMsjBaslik" />
-					</li>
-				</ul>
-			</div>
-			<div class="ems-message-detail-form">
-				<emos id="plhMsjDetayListe">
-					<ascMesajDetayListe>
-						<header>{ul class="ems-message-detail-list"}</header>
-
-						<body>
-							<li><span class="ems-bold-txt"><emos id="plhMsjTarih"/></span><span><emos id="plhMsjMetin"/></span></li>
-						</body>
-						<footer>{/ul}</footer>
-					</ascMesajDetayListe>
-				</emos>
-				<emos id="plhSistemMesaj" />
+<ascMesajDetayPopup>
+	<div class="popupSoruSor">
+		<div class="problemSolution">
+			<div class="problemMessage">
 				<emos id="plhBtnYeniMesaj" />
-				<emos id="plhBtnMesajCozuldu" />
 				<emos id="plhYeniMesajGir" />
 			</div>
+			<div class="problemScores">
+				<emos id="plhBtnMesajCozuldu" />
+				<emos id="plhHizmetDegerlendir" />
+			</div>
+		</div>
+		<emos id="plhMsjDetayListe" />
+		<emos id="plhSistemMesaj" />
+	</div>
+</ascMesajDetayPopup>
+<ascMesajDetay>
+	<div class="ems-page-default ems-page-member-message-detail">
+		<emos type="div" class="page-top-title" id="plhMesajHeader" />
+		<div class="page-top-desc">
+			<ul class="ems-message-type">
+				<li>
+					<emos id="plhMsjTuruLabel" />
+					<emos id="plhMsjTuru" />
+				</li>
+				<li>
+					<emos id="plhMsjBaslikLabel" />
+					<emos id="plhMsjBaslik" />
+				</li>
+			</ul>
+		</div>
+		<div class="ems-message-detail-form">
+			
+				<ascMesajDetayListe>
+				<div class="msgDtList">
+					<div class="msgDtHeader">
+						<ul>
+						  <li><span><emos id="plhMsjMetinLabel"/></span></li>
+						  <li><span><emos id="plhMsjTarihLabel"/></span></li>
+						</ul>
+					</div>
+					<div class="msgDtContent">
+						<ul>
+						  <li><span><emos id="plhMsjMetin"/></span></li>
+						  <li><span><emos id="plhMsjTarih"/></span></li>
+						</ul>
+					</div>
+				</div>
+				</ascMesajDetayListe>
 		</div>
 	</div>
 </ascMesajDetay>
 <ascFavori>
 	<div class="ems-page-default ems-page-member-favorites">
 		<emos type="div" class="page-top-title" id="plhFavoriListeHeader" />
-		<emos type="div" class="page-top-desc" id="plhFavoriListeAciklama" />
+		<div class="page-top-desc">
+			<emos id="plhFavoriListeAciklama" />
+			<emos id="plhFavoriListeTumSil" />
+		</div>
 		<div class="report-holder favorite-report">
-			<emos type="div" class="remove-list" id="plhFavoriListeTumSil" />
 			<div class="select-cfg ems-inline">
 				<emos type="div" class="remove-selected" id="plhBtnFavoriSil" />
 				<emos type="div" class="add-selected" id="plhTopluSepeteEkle" />
@@ -402,13 +494,15 @@
 			<emos type="div" class="ems-message ems-message-error" id="plhFavoriKayitYok" />
 			<emos id="plhFavoriListe">
 				<ascFavoriListe>
-					<header>{div class="ems-grid-default ems-grid-favorites"}
+					<header>{div class="ems-grid-default ems-grid-favorites"}</header>
+
+					<body>
 						<div class="ems-grid-header">
-							<div class="ems-grid-select">
-								<emos id="plhSecLabel" />
-							</div>
 							<div class="ems-grid-img">
 								<emos id="plhResimLabel" />
+							</div>
+							<div class="ems-grid-select">
+								<emos id="plhSecLabel" />
 							</div>
 							<div class="ems-grid-name">
 								<emos id="plhUrunAdiLabel" />
@@ -416,7 +510,7 @@
 							<div class="ems-grid-price">
 								<emos id="plhBirimFiyatiLabel" />
 							</div>
-							<div class="ems-grid-qty">
+							<div class="ems-grid-piece">
 								<emos id="plhAdetLabel" />
 							</div>
 							<div class="ems-grid-option1">
@@ -425,24 +519,20 @@
 							<div class="ems-grid-option2">
 								<emos id="plhSecenek2Label" />
 							</div>
-							<div class="ems-grid-add-to-cart">
-								<emos id="plhSepeteAtLabel" />
-							</div>
 							<div class="ems-grid-report">
 								<emos id="plhGelinceHaberVerLabel" />
+								<emos id="plhSepeteAtLabel" />
 							</div>
 							<div class="ems-grid-remove">
 								<emos id="plhFavoriListeSilLabel" />
 							</div>
 						</div>
-					</header>
-					<body>
 						<div class="ems-grid-row">
-							<div class="ems-grid-select">
-								<emos id="plhSec" />
-							</div>
 							<div class="ems-grid-img">
 								<emos id="plhResim" />
+							</div>
+							<div class="ems-grid-select">
+								<emos id="plhSec" />
 							</div>
 							<div class="ems-grid-name">
 								<emos id="plhUrunAdi" />
@@ -450,7 +540,7 @@
 							<div class="ems-grid-price">
 								<emos id="plhBirimFiyati" />
 							</div>
-							<div class="ems-grid-qty">
+							<div class="ems-grid-piece">
 								<emos id="plhAdet" />
 							</div>
 							<div class="ems-grid-option1">
@@ -459,11 +549,9 @@
 							<div class="ems-grid-option2">
 								<emos id="plhSecenek2" />
 							</div>
-							<div class="ems-grid-add-to-cart">
-								<emos id="plhSepeteAt" />
-							</div>
 							<div class="ems-grid-report">
 								<emos id="plhGelinceHaberVer" />
+								<emos id="plhSepeteAt" />
 							</div>
 							<div class="ems-grid-remove">
 								<emos id="plhFavoriListeSil" />
@@ -486,7 +574,9 @@
 			<emos type="div" class="ems-message ems-message-error" id="plhFiyatKayitYok" />
 			<emos id="plhFiyatListe">
 				<ascFiyatListe>
-					<header>{div class="ems-grid-default ems-grid-follow-price"}
+					<header>{div class="ems-grid-default ems-grid-follow-price"}</header>
+
+					<body>
 						<div class="ems-grid-header">
 							<div class="ems-grid-img">
 								<emos id="plhFiyatResimLabel" />
@@ -510,8 +600,6 @@
 								<emos id="plhFiyatBildirilmeTarihiLabel" />
 							</div>
 						</div>
-					</header>
-					<body>
 						<div class="ems-grid-row">
 							<div class="ems-grid-img">
 								<emos id="plhFiyatResim" />
@@ -546,7 +634,9 @@
 			<emos type="div" class="ems-message ems-message-error" id="plhStokKayitYok" />
 			<emos id="plhStokListe">
 				<ascStokListe>
-					<header>{div class="ems-grid-default ems-grid-follow-stock"}
+					<header>{div class="ems-grid-default ems-grid-follow-stock"}</header>
+
+					<body>
 						<div class="ems-grid-header">
 							<div class="ems-grid-img">
 								<emos id="plhStokResimLabel" />
@@ -567,8 +657,6 @@
 								<emos id="plhStokBildirimTarihiLabel" />
 							</div>
 						</div>
-					</header>
-					<body>
 						<div class="ems-grid-row">
 							<div class="ems-grid-img">
 								<emos id="plhStokResim" />
@@ -599,11 +687,13 @@
 <ascIade>
 	<div class="ems-page-default ems-page-member-refund">
 		<emos type="div" class="page-top-title" id="plhIadeHeader" />
-		<emos id="plhBtnIadeTalep" />
+		<emos type="div" class="page-top-desc" id="plhBtnIadeTalep" />
 		<emos type="div" class="ems-message ems-message-error" id="plhIadeYokLabel" />
 		<emos id="plhIadeListe">
 			<ascIadeListe>
-				<header>{div class="ems-grid-default ems-grid-follow-stock"}
+				<header>{div class="ems-grid-default ems-grid-refund"}</header>
+
+				<body>
 					<div class="ems-grid-header">
 						<div class="ems-grid-doc-no">
 							<emos id="plhEvrakNoLabel" />
@@ -633,8 +723,6 @@
 							<emos id="plhBtnIadeDetayLabel" />
 						</div>
 					</div>
-				</header>
-				<body>
 					<div class="ems-grid-row">
 						<div class="ems-grid-doc-no">
 							<emos id="plhEvrakNo" />
@@ -672,10 +760,10 @@
 	</div>
 </ascIade>
 <ascUyeSifre>
-	<div class="ems-page-default ems-page-password">
+	<div class="ems-page-default ems-page-member-password">
 		<emos type="div" class="page-top-title" id="plhUyeSifreHeader" />
 		<emos type="div" class="page-top-desc" id="plhSifreBilgi" />
-		<div class="ems-form">
+		<div class="ems-form ems-form-horizontal">
 			<div class="ems-form-inner">
 				<div class="ems-field text">
 					<emos type="div" class="ems-form-label" id="plhEskiSifreLabel" />
@@ -684,12 +772,13 @@
 				<div class="ems-field text">
 					<emos type="div" class="ems-form-label" id="plhYeniSifreLabel" />
 					<emos type="div" class="ems-form-obj" id="plhYeniSifre" />
+					<emos type="div" class="ems-form-label" id="plhYeniSifreAciklama" />
 				</div>
 				<div class="ems-field text">
 					<emos type="div" class="ems-form-label" id="plhYeniSifreTekrarLabel" />
-					<emos type="div" class="obj" id="plhYeniSifreTekrar" />
+					<emos type="div" class="ems-form-obj" id="plhYeniSifreTekrar" />
 				</div>
-				<div class="ems-field text">
+				<div class="ems-field button">
 					<div class="ems-form-label"></div>
 					<emos type="div" class="ems-form-obj" id="plhBtnSifreGuncelle" />
 				</div>
