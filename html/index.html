@@ -1,59 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-
-<body>
-    <div class="wrapper">
-        <div class="sayfaDisDiv">
-            <div class="sayfaIcDiv">
-                <!-- SİTE TASLAK -->
-                <div class="site-wrapper">
-                    <!-- COOKIE HEADER -->
-                    <header class="cookie-header" data-time="1">
-                        <div class="cookie-header-inner">
-                            <div class="cookie-header-content">
-                                <p>cookieeee</p>
-                            </div><a class="btn btn-close" href="javascript:void(0);"><i class="ems-icon close1">Close</i></a></div>
-                    </header>
-                       
-                        <!-- MAIN HEADER -->
-                    <header class="site-header">
-                        <div class="site-header-inner">
-                            <!-- LOGO -->
-                            <div class="logo">
-                                <a href="./" title="Grundig">Grundig</a>
-                            </div>
-
-                            <!-- MAIN NAVIGATION -->
-                            getExportData[exports/main-menu.html;]
-                        </div>
-                    </header>
-                    <div class="site-wrapper-inner">
-                        <!-- MINI HEADER -->
-                        <header class="mini-header">
-                            <div class="mini-header-inner">iconlar..</div>
-                        </header>
-
-                        <!-- CONTENT -->
-                        <main class="site-content">
-                            <div class="page page-home"></div>
-                        </main>
-
-                        <!-- FOOTER -->
-                        <footer class="site-footer">
-                            <div class="site-footer-inner"></div>
-                        </footer>
-                    </div>
-
-                </div>
-                <!-- /SİTE TASLAK -->
-            </div>
-        </div>
+----------header 
+{{div class="site-wrapper"}}
+<header class="site-header">
+    <div class="site-header-inner">
+        <div class="sortable"></div>
     </div>
-</body>
+</header>
+{{main class="site-content"}} 
 
-</html>
+----------footer 
+{{/main}}
+<footer class="site-footer">
+    <div class="site-footer-inner">
+        <div class="sortable"></div>
+    </div>
+</footer>
+{{/div}}
+
+----------sayfalar
+---ana sayfa
+<div class="ems-page-default ems-page-home">
+    <div class="sortable"></div>
+</div>
+---ürün liste
+<div class="ems-page-default ems-page-product-list">
+    <div class="sortable"></div>
+</div>
+---ürün detay
+<div class="ems-page-default ems-page-product-detail">
+    <div class="sortable"></div>
+</div>
+---arama
+<div class="ems-page-default ems-page-product-list ems-page-product-search-result">
+    <div class="sortable"></div>
+</div>
+---servis liste
+<div class="ems-page-default ems-page-service-list">
+    <div class="sortable"></div>
+</div>
