@@ -3,7 +3,7 @@ lbfkutuUyeGiris1|<script>$('body').addClass('ems-logoff');</script>Yeni Üyelik 
 lbfkutuUyeGiris3|(logoff 'ken gelir)
 lbfkutuUyeGiris2|<script>$('body').addClass('ems-login');</script> (login 'ken gelir)
 lbfkutuUyeGiris4|(login 'ken gelir)
-lbfUYE_HATALIGIRIS|<div class="ems-message ems-error">Hatalı Giriş</div>
+lbfUYE_HATALIGIRIS|<div class="ems-message ems-message-error">Hatalı Giriş</div>
 lbfKUCUKSEPETHTML|<div class="ems-col"> <div class="cart-prd-remove"><a href='' javascript:sepetUrunSil( '$ALS_ENCKEY$', 'sil'); ''><i class="ems-icon close1">$ALS_SILBTN$</i></a></div><div class="cart-prd-image">$URN_RESIM$</div><div class="cart-prd-name">$URNAD$</div><div class="cart-prd-code ems-none">$URN_KOD$</div><div class="cart-prd-quantity"><input type="text" value="$URNADET$" maxlength="5" size="5" min="1" readonly> <div class="iControl"><a href="javascript:sepetUrunGuncelle('$ALS_ENCKEY$','ekle');"><i class="ems-icon plus1">$ALS_EKLEBTN$</i></a> <a href="javascript:sepetUrunGuncelle('$ALS_ENCKEY$','cikar');"><i class="ems-icon minus1">$ALS_CIKARBTN$</i></a> </div></div><div class="cart-prd-price">$URN_NETTOPLAM$</div><a class="cart-prd-link" href="javascript:void(0);"></a></div>
 lbfSPT_SEPETDEURUNYOK|<p>Sepetiniz Henüz Boş</p>
 lbfARM_MESAJ|Arama
